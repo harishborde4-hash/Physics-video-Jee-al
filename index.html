@@ -1,15 +1,104 @@
-const subjects = document.querySelectorAll('.subject');
-const backBtn = document.getElementById('backBtn');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Physics Videos - JEE Preparation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a2e0e6adf3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header class="welcome-header">
+      <button class="back-btn" id="backBtn">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <div class="welcome-text">
+        <h1>Physics Videos - JEE Prep</h1>
+        <p>Elphinstone College</p>
+      </div>
+    </header>
 
-// Open YouTube link in a new tab
-subjects.forEach(subject => {
-  subject.addEventListener('click', () => {
-    const url = subject.dataset.url;
-    window.open(url, '_blank');
-  });
-});
+    <!-- Instruction Banner -->
+    <div class="instruction-banner">
+      <p>Click on any chapter below to view the video on <strong>YouTube</strong>.</p>
+    </div>
 
-// Back button to return to previous portal page
-backBtn.addEventListener('click', () => {
-  window.history.back();
-});
+    <!-- Chapter List -->
+    <div class="subject-list">
+      <div class="subject" data-url="https://youtu.be/Xmjx910G0WI?si=ZNKMObOWj33B2bpZ">
+        <i class="fas fa-ruler icon"></i>
+        <h3>Units and Measurement</h3>
+      </div>
+
+      <div class="subject" data-url="https://youtu.be/Ka7JjFI6eDY?si=B4ZPz355QQ-mTkh6">
+        <i class="fas fa-calculator icon"></i>
+        <h3>Mathematical Methods</h3>
+      </div>
+
+      <div class="subject" data-url="https://www.youtube.com/live/U-tlb7_vnhM?si=2Ct9IWJl-C91J8kz">
+        <i class="fas fa-project-diagram icon"></i>
+        <h3>Motion in a Plane</h3>
+      </div>
+
+      <div class="subject" data-url="https://youtu.be/AdMCk2FiMnM?si=6dEAN57Fycg8JTmy">
+        <i class="fas fa-balance-scale icon"></i>
+        <h3>Laws of Motion</h3>
+      </div>
+
+      <div class="subject" data-url="https://www.youtube.com/live/Rgsg4NgwrXI?si=aP95D609sz-FGJai">
+        <i class="fas fa-globe-americas icon"></i>
+        <h3>Gravitation</h3>
+      </div>
+
+      <div class="subject" data-url="https://www.youtube.com/live/FCByCwnj_J0?si=JBG0AGeUDz8apu0M">
+        <i class="fas fa-cogs icon"></i>
+        <h3>Mechanical Properties of Solids</h3>
+      </div>
+
+      <div class="subject" data-url="https://youtu.be/TtU8rRMs2bI?si=LIoKYApim5WBbgNV">
+        <i class="fas fa-thermometer-half icon"></i>
+        <h3>Thermal Properties of Matter</h3>
+      </div>
+
+      <div class="subject" data-url="https://youtu.be/LH-0UfpguJg?si=JQCTAKX_pg6iafTD">
+        <i class="fas fa-volume-up icon"></i>
+        <h3>Sound</h3>
+      </div>
+
+      <div class="subject" data-url="https://www.youtube.com/live/72T8RfBU0ME?si=QLDK4Q_Ep_--AAuH">
+        <i class="fas fa-lightbulb icon"></i>
+        <h3>Optics</h3>
+      </div>
+
+      <div class="subject" data-url="https://youtu.be/StwUNDxdw2c?si=0XiQN9ZcOp2ITBNV">
+        <i class="fas fa-bolt icon"></i>
+        <h3>Electrostatics</h3>
+      </div>
+
+      <div class="subject" data-url="https://youtu.be/TsG6d2VWuKA?si=4Gr23KMnlKyMbKth">
+        <i class="fas fa-bolt icon"></i>
+        <h3>Electric Current Through Conductors</h3>
+      </div>
+
+      <div class="subject" data-url="https://www.youtube.com/live/I4kB3onwjpw?si=OT7kx4wBhtpmKB2k">
+        <i class="fas fa-magnet icon"></i>
+        <h3>Magnetism</h3>
+      </div>
+
+      <div class="subject" data-url="https://youtu.be/8TnzQkZrztQ?si=Kxeb3TnsLgrHCyqS">
+        <i class="fas fa-wave-square icon"></i>
+        <h3>Waves & Communication System</h3>
+      </div>
+
+      <div class="subject" data-url="https://www.youtube.com/live/YTmtAuItIfY?si=U6e0h1VVoOKfVuoH">
+        <i class="fas fa-microchip icon"></i>
+        <h3>Semiconductors</h3>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
